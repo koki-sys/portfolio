@@ -1,14 +1,20 @@
 import React from "react"
 import ReactDOM from "react-dom"
-import "./index.css"
 import { BrowserRouter } from "react-router-dom"
 import { RootRouter } from "Route"
 
+import { createTheme, CssBaseline, ThemeProvider } from "@material-ui/core"
+
+const theme = createTheme()
+
 ReactDOM.render(
     <React.StrictMode>
-        <BrowserRouter>
-            <RootRouter />
-        </BrowserRouter>
+        <ThemeProvider theme={theme}>
+            <BrowserRouter>
+                <CssBaseline />
+                <RootRouter />
+            </BrowserRouter>
+        </ThemeProvider>
     </React.StrictMode>,
     document.getElementById("root"),
 )
