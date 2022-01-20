@@ -1,9 +1,10 @@
+import { HomeLayout } from "layouts/Home"
 import { Navigate, useRoutes } from "react-router-dom"
 
 export const RootRouter = () => {
     return useRoutes([
         {
-            // element: <HomeLayout />,
+            element: <HomeLayout />,
 
             children: [
                 { path: "/", element: <div>Home</div> },
