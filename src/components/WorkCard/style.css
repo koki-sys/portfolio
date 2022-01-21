@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+    .card-body {
+        background-color: #C7D59F;
+        color: #4B5842;
+    }
+}
