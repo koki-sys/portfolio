@@ -9,7 +9,7 @@ export const RootRouter = () => {
             children: [
                 { path: "/", element: <div>Home</div> },
                 { path: "/about", element: <div>About</div> },
-                { path: "/profile", element: <div>Profile</div> },
+                { path: "/works", element: <div>Works</div> },
             ],
         },
         { path: "*", element: <Navigate to="/404" /> },
