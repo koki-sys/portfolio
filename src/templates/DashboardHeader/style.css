@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+    .header-bg {
+        background-color: #4B5842;
+    }
+    .header-text {
+        color: #DADDD8;
+    }
+}
