@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 import "templates/DashboardHeader/style.css"
 
 export const DashboardHeader = () => {
@@ -11,18 +12,18 @@ export const DashboardHeader = () => {
             <div className="w-full block flex-grow lg:flex lg:items-center lg:w-auto"></div>
             <div>
                 <div className="text-sm lg:flex-grow">
-                    <a
-                        href="/works"
+                    <Link
+                        to="/works"
                         className="block mt-4 lg:inline-block lg:mt-0 header-text hover:text-white mr-4"
                     >
                         Works
-                    </a>
-                    <a
-                        href="/about"
+                    </Link>
+                    <Link
+                        to="/about"
                         className="block mt-4 lg:inline-block lg:mt-0 header-text hover:text-white"
                     >
                         About
-                    </a>
+                    </Link>
                 </div>
             </div>
         </nav>
